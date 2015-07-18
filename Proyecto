@@ -1,0 +1,5 @@
+git clone github_url C:\Users\Blutharsch\Desktop\Gestión de Casting
+git add C:\Users\Blutharsch\Desktop\Gestión de Casting
+git commit
+git push
+
