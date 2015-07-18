@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D28C6E6-8E6E-42B4-8491-168F6A11CBEC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Casting</RootNamespace>
+    <AssemblyName>Casting</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge.Video">
+      <HintPath>..\..\..\..\Development\Camera C#\AForge.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Video.DirectShow">
+      <HintPath>..\..\..\..\Development\Camera C#\AForge.Video.DirectShow.dll</HintPath>
+    </Reference>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\..\..\..\..\Videos\Componentes Graficos Vb2\SKIN NET 2010 WIN 7\SkinVS.NET\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActualizarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarCliente.Designer.cs">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\Agente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\Agente.Designer.cs">
+      <DependentUpon>Agente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\AgregarPruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\AgregarPruebas.Designer.cs">
+      <DependentUpon>AgregarPruebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\CastingRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\CastingRegistro.Designer.cs">
+      <DependentUpon>CastingRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\Cliente_Agente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\Cliente_Agente.Designer.cs">
+      <DependentUpon>Cliente_Agente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\ContratarCasting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\ContratarCasting.Designer.cs">
+      <DependentUpon>ContratarCasting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\DetallesAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\DetallesAgente.Designer.cs">
+      <DependentUpon>DetallesAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\DetallesContactoCl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\DetallesContactoCl.Designer.cs">
+      <DependentUpon>DetallesContactoCl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\DetallesDeCasting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\DetallesDeCasting.Designer.cs">
+      <DependentUpon>DetallesDeCasting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\EditarAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\EditarAgente.Designer.cs">
+      <DependentUpon>EditarAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\EditarCasting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\EditarCasting.Designer.cs">
+      <DependentUpon>EditarCasting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\Fases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\Fases.Designer.cs">
+      <DependentUpon>Fases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\MetodosCasting.cs" />
+    <Compile Include="Castings\MetodosNav.cs" />
+    <Compile Include="Castings\Pruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\Pruebas.Designer.cs">
+      <DependentUpon>Pruebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\Resultados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\Resultados.Designer.cs">
+      <DependentUpon>Resultados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\ResultadosCandidatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\ResultadosCandidatos.Designer.cs">
+      <DependentUpon>ResultadosCandidatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\ResultadosPrueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\ResultadosPrueba.Designer.cs">
+      <DependentUpon>ResultadosPrueba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\verCastings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\verCastings.Designer.cs">
+      <DependentUpon>verCastings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Castings\verPruebas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Castings\verPruebas.Designer.cs">
+      <DependentUpon>verPruebas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesCandidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesCandidato.Designer.cs">
+      <DependentUpon>DetallesCandidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesPerfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesPerfil.Designer.cs">
+      <DependentUpon>DetallesPerfil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesRep.Designer.cs">
+      <DependentUpon>DetallesRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesRepresentante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesRepresentante.Designer.cs">
+      <DependentUpon>DetallesRepresentante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesTutor.Designer.cs">
+      <DependentUpon>DetallesTutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarUsuario.Designer.cs">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuardarTutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuardarTutor.Designer.cs">
+      <DependentUpon>GuardarTutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Camara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Camara.Designer.cs">
+      <DependentUpon>Camara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Candidato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Candidato.Designer.cs">
+      <DependentUpon>Candidato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataCliente.Designer.cs">
+      <DependentUpon>DataCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetallesContactos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetallesContactos.Designer.cs">
+      <DependentUpon>DetallesContactos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Load\LoadThread.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Load\LoadThread.Designer.cs">
+      <DependentUpon>LoadThread.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetodosCandidato.cs" />
+    <Compile Include="Inicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inicio.Designer.cs">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MetodosComunes.cs" />
+    <Compile Include="MetodosPerfiles.cs" />
+    <Compile Include="MetodosRepresentante.cs" />
+    <Compile Include="GuardarRepresentantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuardarRepresentantes.Designer.cs">
+      <DependentUpon>GuardarRepresentantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CadCon.cs" />
+    <Compile Include="Pwd\MetodosPwd.cs" />
+    <Compile Include="Pwd\Recuperacion1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pwd\Recuperacion1.Designer.cs">
+      <DependentUpon>Recuperacion1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pwd\Recuperacion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pwd\Recuperacion2.Designer.cs">
+      <DependentUpon>Recuperacion2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CastingRepViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\CastingRepViewer.Designer.cs">
+      <DependentUpon>CastingRepViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dbCasting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbCasting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\MostrarCandidatosRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\MostrarCandidatosRep.Designer.cs">
+      <DependentUpon>MostrarCandidatosRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\MostrarClienteInactivoRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\MostrarClienteInactivoRep.Designer.cs">
+      <DependentUpon>MostrarClienteInactivoRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\MostrarClienteReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\MostrarClienteReport.Designer.cs">
+      <DependentUpon>MostrarClienteReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarTutorEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarTutorEx.Designer.cs">
+      <DependentUpon>AgregarTutorEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ReporteAgente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ReporteAgente.Designer.cs">
+      <DependentUpon>ReporteAgente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temp.cs" />
+    <Compile Include="Usuarios.cs" />
+    <Compile Include="VerCandidatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerCandidatos.Designer.cs">
+      <DependentUpon>VerCandidatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerPerfiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerPerfiles.Designer.cs">
+      <DependentUpon>VerPerfiles.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ActualizarCliente.resx">
+      <DependentUpon>ActualizarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\Agente.resx">
+      <DependentUpon>Agente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\AgregarPruebas.resx">
+      <DependentUpon>AgregarPruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\CastingRegistro.resx">
+      <DependentUpon>CastingRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\Cliente_Agente.resx">
+      <DependentUpon>Cliente_Agente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\ContratarCasting.resx">
+      <DependentUpon>ContratarCasting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\DetallesAgente.resx">
+      <DependentUpon>DetallesAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\DetallesContactoCl.resx">
+      <DependentUpon>DetallesContactoCl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\DetallesDeCasting.resx">
+      <DependentUpon>DetallesDeCasting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\EditarAgente.resx">
+      <DependentUpon>EditarAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\EditarCasting.resx">
+      <DependentUpon>EditarCasting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\Fases.resx">
+      <DependentUpon>Fases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\Pruebas.resx">
+      <DependentUpon>Pruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\Resultados.resx">
+      <DependentUpon>Resultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\ResultadosCandidatos.resx">
+      <DependentUpon>ResultadosCandidatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\ResultadosPrueba.resx">
+      <DependentUpon>ResultadosPrueba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\verCastings.resx">
+      <DependentUpon>verCastings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Castings\verPruebas.resx">
+      <DependentUpon>verPruebas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesCandidato.resx">
+      <DependentUpon>DetallesCandidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesPerfil.resx">
+      <DependentUpon>DetallesPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesRep.resx">
+      <DependentUpon>DetallesRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesRepresentante.resx">
+      <DependentUpon>DetallesRepresentante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesTutor.resx">
+      <DependentUpon>DetallesTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarUsuario.resx">
+      <DependentUpon>EditarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuardarTutor.resx">
+      <DependentUpon>GuardarTutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Camara.resx">
+      <DependentUpon>Camara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Candidato.resx">
+      <DependentUpon>Candidato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataCliente.resx">
+      <DependentUpon>DataCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetallesContactos.resx">
+      <DependentUpon>DetallesContactos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Load\LoadThread.resx">
+      <DependentUpon>LoadThread.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuardarRepresentantes.resx">
+      <DependentUpon>GuardarRepresentantes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Pwd\Recuperacion1.resx">
+      <DependentUpon>Recuperacion1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pwd\Recuperacion2.resx">
+      <DependentUpon>Recuperacion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Agente.rdlc" />
+    <EmbeddedResource Include="Reportes\CandidatoPefiles.rdlc" />
+    <EmbeddedResource Include="Reportes\CastingReport.rdlc" />
+    <EmbeddedResource Include="Reportes\CastingRepViewer.resx">
+      <DependentUpon>CastingRepViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Cliente.rdlc" />
+    <EmbeddedResource Include="Reportes\ClienteInactivo.rdlc" />
+    <EmbeddedResource Include="Reportes\MostrarCandidatosRep.resx">
+      <DependentUpon>MostrarCandidatosRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\MostrarClienteInactivoRep.resx">
+      <DependentUpon>MostrarClienteInactivoRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\MostrarClienteReport.resx">
+      <DependentUpon>MostrarClienteReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarTutorEx.resx">
+      <DependentUpon>AgregarTutorEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ReporteAgente.resx">
+      <DependentUpon>ReporteAgente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerCandidatos.resx">
+      <DependentUpon>VerCandidatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerPerfiles.resx">
+      <DependentUpon>VerPerfiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reportes\dbCasting.xsc">
+      <DependentUpon>dbCasting.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dbCasting.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbCasting.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\dbCasting.xss">
+      <DependentUpon>dbCasting.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Icons\" />
+    <Folder Include="Repositorio\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
